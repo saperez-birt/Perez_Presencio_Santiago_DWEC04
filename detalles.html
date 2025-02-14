@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéTrainer - Detalles del Pokémon</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"> <img src="assets/img/POKE-TRAINER-14-2-2025.png" alt=""></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#pokemon-search">Buscar Pokémon</a></li>
+                <li><a href="comparador.html">Comparar Pokémon</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="pokemon-details-container">
+        <section id="pokemon-search">
+            <h2>Buscar Pokémon</h2>
+            <input type="text" id="pokemon-name" placeholder="Nombre del Pokémon">
+            <button id="search-btn">Buscar</button>
+        </section>
+
+        <section id="pokemon-details">
+            <!-- Los detalles del Pokémon se cargarán aquí -->
+        </section>
+
+        <section id="pokemon-stats">
+            <canvas id="stats-chart"></canvas>
+        </section>
+    </main>
+
+    <script src="js/detalles.js"></script>
+</body>
+</html>
